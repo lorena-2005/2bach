@@ -18,10 +18,39 @@
         <link href="" rel="shortcut icon" type="image/x-icon">
         <!--etiqueta para incluir un icono-->
         <style>
-            
+            .item1 { grid-area: header;
+                    text-align: center;}
+            .item2 { grid-area: menu;}
+            .grid-container {display: grid;
+                            grid-template-areas:
+                                'header header header header header header'
+                                'menu main main main right right'
+                                'menu main main main right right'
+                                'menu main main main right right'
+                                'menu main main main right right'
+                                'footer footer footer footer footer footer';
+                            grid-gap: 10px;
+                            background-color: #2196F3;
+                            padding: 10px;
+                            }
+            .grid-container > div {
+                            background-color: rgba(255, 255, 255, 0.8);
+                            padding: 20px 0;
+                            font-size: 15px;
+                            }
+            body {background-image: linear-gradient(60deg, red, blue, pink , yellow, green)}
+            a {font-size: 10px;}
+            p {font-size: 12px;}
         </style>
     </head>
     <body>
+        <div class="grid-container"></div>
+            <div class="item1">
+                
+            </div>
+            <div class="item2">
 
+            </div>
+            
     </body>
 </html>    
